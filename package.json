@@ -2,7 +2,7 @@
   "name": "Stilko",
   "version": "1.0.0",
   "description": "My stunning Nuxt.js project",
-  "author": "Fifciuu",
+  "author": "mj426382",
   "private": true,
   "scripts": {
     "dev": "nuxt",
