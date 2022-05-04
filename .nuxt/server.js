@@ -39,7 +39,7 @@ const createNext = ssrContext => (opts) => {
   }
   let fullPath = withQuery(opts.path, opts.query)
   const $config = ssrContext.runtimeConfig || {}
-  const routerBase = ($config._app && $config._app.basePath) || '/'
+  const routerBase = ($config._app && $config._app.basePath) || '/%3Crepository-name%3E/'
   if (!fullPath.startsWith('http') && (routerBase !== '/' && !fullPath.startsWith(routerBase))) {
     fullPath = joinURL(routerBase, fullPath)
   }
@@ -71,6 +71,10 @@ export default async (ssrContext) => {
     ssrContext.fetchCounters = {}
 
   // Remove query from url is static target
+
+  if (ssrContext.url) {
+    ssrContext.url = ssrContext.url.split('?')[0]
+  }
 
   // Public runtime config
   ssrContext.nuxt.config = ssrContext.runtimeConfig.public

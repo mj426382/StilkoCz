@@ -11,9 +11,9 @@ const routerBase =
 
 export default {
   mode: 'universal',
-
-  static: {
-    prefix: false
+  target: 'static',
+  router: {
+    base: '/<repository-name>/'
   },
 
   /*

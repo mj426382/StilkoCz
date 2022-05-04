@@ -104,7 +104,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/_nuxt/";
+/******/ 	__webpack_require__.p = "/%3Crepository-name%3E/_nuxt/";
 /******/
 /******/ 	// uncaught error handler for webpack runtime
 /******/ 	__webpack_require__.oe = function(err) {
@@ -1037,7 +1037,7 @@ async function setContext(app, context) {
   // If context not defined, create it
   if (!app.context) {
     app.context = {
-      isStatic: false,
+      isStatic: true,
       isDev: false,
       isHMR: false,
       app,
@@ -1046,14 +1046,6 @@ async function setContext(app, context) {
       base: app.router.options.base,
       env: {}
     }; // Only set once
-
-    if (context.req) {
-      app.context.req = context.req;
-    }
-
-    if (context.res) {
-      app.context.res = context.res;
-    }
 
     if (context.ssrContext) {
       app.context.ssrContext = context.ssrContext;
@@ -1631,7 +1623,7 @@ const emptyFn = () => {};
 external_vue_default.a.use(external_vue_router_default.a);
 const routerOptions = {
   mode: 'history',
-  base: '/',
+  base: '/%3Crepository-name%3E/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior: router_scrollBehavior,
@@ -2343,6 +2335,16 @@ const layouts = {
 
   async mounted() {
     this.$loading = this.$refs.loading;
+
+    if (this.isPreview) {
+      if (this.$store && this.$store._actions.nuxtServerInit) {
+        this.$loading.start();
+        await this.$store.dispatch('nuxtServerInit', this.context);
+      }
+
+      await this.refresh();
+      this.$loading.finish();
+    }
   },
 
   watch: {
@@ -2355,6 +2357,10 @@ const layouts = {
 
     isFetching() {
       return this.nbFetching > 0;
+    },
+
+    isPreview() {
+      return Boolean(this.$options.previewData);
     }
 
   },
@@ -2447,6 +2453,62 @@ const layouts = {
       }
 
       return Promise.resolve(layouts['_' + layout]);
+    },
+
+    getRouterBase() {
+      return Object(external_ufo_["withoutTrailingSlash"])(this.$router.options.base);
+    },
+
+    getRoutePath(route = '/') {
+      const base = this.getRouterBase();
+      return Object(external_ufo_["withoutTrailingSlash"])(Object(external_ufo_["withoutBase"])(Object(external_ufo_["parsePath"])(route).pathname, base));
+    },
+
+    getStaticAssetsPath(route = '/') {
+      const {
+        staticAssetsBase
+      } = window.__NUXT__;
+      return urlJoin(staticAssetsBase, this.getRoutePath(route));
+    },
+
+    async fetchStaticManifest() {
+      return window.__NUXT_IMPORT__('manifest.js', Object(external_ufo_["normalizeURL"])(urlJoin(this.getStaticAssetsPath(), 'manifest.js')));
+    },
+
+    setPagePayload(payload) {
+      this._pagePayload = payload;
+      this._fetchCounters = {};
+    },
+
+    async fetchPayload(route, prefetch) {
+      const path = Object(external_ufo_["decode"])(this.getRoutePath(route));
+      const manifest = await this.fetchStaticManifest();
+
+      if (!manifest.routes.includes(path)) {
+        if (!prefetch) {
+          this.setPagePayload(false);
+        }
+
+        throw new Error(`Route ${path} is not pre-rendered`);
+      }
+
+      const src = urlJoin(this.getStaticAssetsPath(route), 'payload.js');
+
+      try {
+        const payload = await window.__NUXT_IMPORT__(path, Object(external_ufo_["normalizeURL"])(src));
+
+        if (!prefetch) {
+          this.setPagePayload(payload);
+        }
+
+        return payload;
+      } catch (err) {
+        if (!prefetch) {
+          this.setPagePayload(false);
+        }
+
+        throw err;
+      }
     }
 
   },
@@ -2588,7 +2650,7 @@ async function createApp(ssrContext, config = {}) {
         "rel": "stylesheet"
       }, {
         "rel": "manifest",
-        "href": "\u002F_nuxt\u002Fmanifest.be6423b4.json"
+        "href": "\u002F%3Crepository-name%3E\u002F_nuxt\u002Fmanifest.5bef94c4.json"
       }],
       "style": [],
       "script": [],
@@ -2822,7 +2884,7 @@ const createNext = ssrContext => opts => {
 
   let fullPath = Object(external_ufo_["withQuery"])(opts.path, opts.query);
   const $config = ssrContext.runtimeConfig || {};
-  const routerBase = $config._app && $config._app.basePath || '/';
+  const routerBase = $config._app && $config._app.basePath || '/%3Crepository-name%3E/';
 
   if (!fullPath.startsWith('http') && routerBase !== '/' && !fullPath.startsWith(routerBase)) {
     fullPath = Object(external_ufo_["joinURL"])(routerBase, fullPath);
@@ -2861,7 +2923,11 @@ const createNext = ssrContext => opts => {
     routePath: ''
   };
   ssrContext.fetchCounters = {}; // Remove query from url is static target
-  // Public runtime config
+
+  if (ssrContext.url) {
+    ssrContext.url = ssrContext.url.split('?')[0];
+  } // Public runtime config
+
 
   ssrContext.nuxt.config = ssrContext.runtimeConfig.public;
 
