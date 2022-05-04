@@ -12,6 +12,10 @@ const routerBase =
 export default {
   mode: 'universal',
 
+  static: {
+    prefix: false
+  },
+
   /*
    ** Headers of the page
    */

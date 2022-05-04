@@ -2,28 +2,28 @@ importScripts('/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/1eca96d.js",
-    "revision": "27d332348ca80223b32df6aed6810d29"
+    "url": "/_nuxt/0abf672.js",
+    "revision": "7f1ac3dd097ef87bff4f3133401a6898"
   },
   {
-    "url": "/_nuxt/3c7c1f4.js",
-    "revision": "bc227f1d5167e99f20d524c9a1df3230"
+    "url": "/_nuxt/c04a15d.js",
+    "revision": "1d639bd87e3fca6ea966cfc12fa8adf8"
   },
   {
-    "url": "/_nuxt/53a348b.js",
-    "revision": "32dabbffe00247890a98ed9cb55baca8"
+    "url": "/_nuxt/cc5e257.js",
+    "revision": "22f672f92c957927e38241ecb55fb0bc"
   },
   {
-    "url": "/_nuxt/7317676.js",
-    "revision": "4badfbda72f43d8bf73ef386f0348e41"
+    "url": "/_nuxt/e0c571f.js",
+    "revision": "e5407fe9235a366bafb44c7257da25a4"
   },
   {
-    "url": "/_nuxt/9606e70.js",
-    "revision": "2adacdca018ac8715214a42f0f2fc495"
+    "url": "/_nuxt/e298e2e.js",
+    "revision": "660afc9f4e09f26f0858f8884837a47b"
   },
   {
-    "url": "/_nuxt/f235564.js",
-    "revision": "8f440068653e25dcbd3df7ef4f82d588"
+    "url": "/_nuxt/e39d00a.js",
+    "revision": "4be42cca1c2d94a1d174388209d71aca"
   }
 ], {
   "cacheId": "Stilko",
