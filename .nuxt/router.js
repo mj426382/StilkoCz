@@ -13,7 +13,7 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: '/%3Crepository-name%3E/',
+  base: '/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
