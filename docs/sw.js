@@ -1,29 +1,29 @@
-importScripts('/_nuxt/workbox.4c4f5ca6.js')
+importScripts('/%3Crepository-name%3E/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/3110df0.js",
-    "revision": "4fc356f32f84175698ef7eea21486dd3"
+    "url": "/%3Crepository-name%3E/_nuxt/91d6607.js",
+    "revision": "197087051e38561964bdbbfd94b29504"
   },
   {
-    "url": "/_nuxt/7baa9ba.js",
-    "revision": "edb0ec80ff441fc6d3a9c9279733d0a5"
+    "url": "/%3Crepository-name%3E/_nuxt/92da059.js",
+    "revision": "e6417e01813efd009b3546cfadf76ae5"
   },
   {
-    "url": "/_nuxt/8ff18ef.js",
-    "revision": "c698c7f1db9bdf7f5e46f3731bdc591f"
+    "url": "/%3Crepository-name%3E/_nuxt/c003676.js",
+    "revision": "b18a6f401c5d25f96e1a7b076f32e7fa"
   },
   {
-    "url": "/_nuxt/b8bed84.js",
-    "revision": "d42fffd70005585901a53a08ac9235d4"
+    "url": "/%3Crepository-name%3E/_nuxt/c913596.js",
+    "revision": "3516c78724c99fbbc463a2e20cddbb6c"
   },
   {
-    "url": "/_nuxt/d6f2844.js",
-    "revision": "1c847ec983d9d0ac3295dbfff4e258c2"
+    "url": "/%3Crepository-name%3E/_nuxt/ebe8d10.js",
+    "revision": "f7f34de56b847ada1f82754a6bd109a4"
   },
   {
-    "url": "/_nuxt/eab3e6f.js",
-    "revision": "c3212734bb2d37390857f5313285e1ce"
+    "url": "/%3Crepository-name%3E/_nuxt/f2e2b2b.js",
+    "revision": "281511fdabc34df6081890989bec8b45"
   }
 ], {
   "cacheId": "Stilko",
@@ -34,6 +34,6 @@ workbox.precaching.precacheAndRoute([
 workbox.clientsClaim()
 workbox.skipWaiting()
 
-workbox.routing.registerRoute(new RegExp('/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/%3Crepository-name%3E/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
 
-workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('/%3Crepository-name%3E/.*'), workbox.strategies.networkFirst({}), 'GET')
