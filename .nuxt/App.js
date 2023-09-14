@@ -5,14 +5,14 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '..\\node_modules\\bootstrap\\dist\\css\\bootstrap.css'
 
-import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
+import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
 
-import '../assets/main.scss'
+import '..\\assets\\main.scss'
 
-import _771c4438 from '../layouts/build.vue'
-import _6f6c098b from '../layouts/default.vue'
+import _771c4438 from '..\\layouts\\build.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
 
 const layouts = { "_build": sanitizeComponent(_771c4438),"_default": sanitizeComponent(_6f6c098b) }
 

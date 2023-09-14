@@ -168,7 +168,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "7e22399e",
-  "d780a762"
+  "8e276456"
   
 )
 
@@ -210,7 +210,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "90ebd90a"
+  "11be4fb5"
   
 )
 
@@ -257,7 +257,7 @@ module.exports.__inject__ = function (context) {
 /***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/ph.ee8d12e.svg";
+module.exports = __webpack_require__.p + "img/ph.f5b0faa.svg";
 
 /***/ }),
 
@@ -334,12 +334,12 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=a3e8864c&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<section id=\"home\" class=\"container-margin intro-jumbotron\">","</section>",[_c('b-row',{staticClass:"header-bg"},[_c('b-col',{attrs:{"xs12":""}},[_c('div',{staticClass:"logo--wrapper",attrs:{"href":"/"}},[_c('img',{staticClass:"logo",attrs:{"src":__webpack_require__(20),"alt":"logo stilko"}}),_vm._v(" "),_c('div',[_c('span',{staticClass:"title"},[_vm._v("STILKO")]),_vm._v(" "),_c('p',{staticClass:"logo__description"},[_vm._v("I VŠE Z KOVU")])])])])],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"container-margin products\">","</section>",[_c('Subtitle',{attrs:{"id":"products"}},[_vm._v("Výrobky")]),_vm._ssrNode(" "),_c('b-row',_vm._l((_vm.items),function(item){return _c('b-col',{key:item.name,attrs:{"xs":"12","sm":"6","md":"3"}},[_c('Product',{attrs:{"name":item.name,"photo":item.photo,"description":item.description,"subproducts":item.subproducts,"special":item.special || false}})],1)}),1)],2),_vm._ssrNode(" "),_vm._ssrNode("<section id=\"contact\" class=\"contact\">","</section>",[_c('b-col',{staticClass:"contact",attrs:{"xs":"12","sm":"12","md":"6"}},[(_vm.formSentSuccesfully !== true)?_c('div',{staticClass:"contact-form--wrapper",attrs:{"id":"ct-form"}},[_c('h2',{staticClass:"contact--header"},[_vm._v("Zadejte svou objednávku/poptávku")]),_vm._v(" "),_c('p',{staticClass:"contact--description"},[_vm._v("Napište nám")]),_vm._v(" "),_c('form',{staticClass:"contact--form",on:{"submit":function($event){$event.preventDefault();return _vm.sendEmail.apply(null, arguments)}}},[_c('input',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.formName),expression:"formName",modifiers:{"trim":true}}],staticClass:"contact--input",attrs:{"type":"text","name":"name","placeholder":"Jméno a příjmení"},domProps:{"value":(_vm.formName)},on:{"input":function($event){if($event.target.composing){ return; }_vm.formName=$event.target.value.trim()},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('span',{staticClass:"contact-field__info"},[_vm._v("Minimálně 5 znaků")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.formEmail),expression:"formEmail",modifiers:{"trim":true}}],staticClass:"contact--input",attrs:{"name":"email","type":"email","placeholder":"E-mailová adresa"},domProps:{"value":(_vm.formEmail)},on:{"input":function($event){if($event.target.composing){ return; }_vm.formEmail=$event.target.value.trim()},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('span',{staticClass:"contact-field__info"},[_vm._v("Minimálně 7 znaků")]),_vm._v(" "),_c('textarea',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.formMessage),expression:"formMessage",modifiers:{"trim":true}}],staticClass:"contact--input",attrs:{"name":"message","rows":"5","placeholder":"Zpráva"},domProps:{"value":(_vm.formMessage)},on:{"input":function($event){if($event.target.composing){ return; }_vm.formMessage=$event.target.value.trim()},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('span',{staticClass:"contact-field__info last"},[_vm._v("Minimálně 10 znaků")]),_vm._v(" "),_c('button',{staticClass:"contact--submit",attrs:{"type":"submit","disabled":!_vm.canSendEmail || _vm.isSending}},[_vm._v("Odeslat")])])]):_c('div',{staticClass:"contact-form--wrapper",attrs:{"id":"ct-form"}},[_c('h2',{staticClass:"contact--header"},[_vm._v("Děkujeme vám za zaslání e-mailu!")]),_vm._v(" "),_c('p',{staticClass:"contact--description"},[_vm._v("Budeme vás co nejdříve kontaktovat")])]),_vm._v(" "),_c('b-row',{staticClass:"tile--wrapper"},[_c('b-col',{staticClass:"tile",attrs:{"sm":"12","md":"4"}},[_c('a',{attrs:{"href":"tel: +48 602 590 435"}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":__webpack_require__(55),"alt":"Telefon"}})]),_vm._v(" "),_c('span',[_vm._v("+48 602 590 435")])])]),_vm._v(" "),_c('b-col',{staticClass:"tile",staticStyle:{"text-align":"center"},attrs:{"sm":"12","md":"4"}},[_c('a',{attrs:{"target":"_blank","href":""}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":__webpack_require__(56),"alt":"Lokalizacja"}})]),_vm._v(" "),_c('span',[_vm._v("ul. Gołębia 4"),_c('br'),_vm._v("26-601 Bielicha"),_c('br'),_vm._v("Polska")])])]),_vm._v(" "),_c('b-col',{staticClass:"tile",staticStyle:{"text-align":"center"},attrs:{"sm":"12","md":"4"}},[_c('a',{attrs:{"target":"_blank","href":"mailto:biuro.stilko@gmail.com"}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":__webpack_require__(57),"alt":"Email"}})]),_vm._v(" "),_c('span',[_vm._v("biuro.stilko@gmail.com")])])])],1)],1),_vm._ssrNode(" "),_c('b-col',{staticClass:"map",attrs:{"xs":"12","sm":"12","md":"6"}},[_c('div',[_c('Subtitle',{attrs:{"id":"about"}},[_vm._v("O nás")]),_vm._v(" "),_c('div',{domProps:{"innerHTML":_vm._s(_vm.aboutUs)}})],1),_vm._v(" "),_c('div',{staticClass:"map-wrapper"},[_c('a',{attrs:{"target":"_blank","href":"https://www.google.com/maps/place/STILKO+Monika+Fo%C5%82tyn/@51.4045971,21.114648,14.5z/data=!4m13!1m7!3m6!1s0x471859a88238ea31:0x302ad0e8848c83b9!2sBielicha+92A,+26-601+Bielicha!3b1!8m2!3d51.4174221!4d21.084609!3m4!1s0x47185924c62ce7c5:0xfc067ced0375085b!8m2!3d51.4173088!4d21.0845403"}},[_c('img',{attrs:{"width":"80%","src":'./map.jpeg',"alt":"Stilko Mapa"}})])])])],2)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=535c3ed4&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<section id=\"home\" class=\"container-margin intro-jumbotron\">","</section>",[_c('b-row',{staticClass:"header-bg"},[_c('b-col',{attrs:{"xs12":""}},[_c('div',{staticClass:"logo--wrapper",attrs:{"href":"/"}},[_c('img',{staticClass:"logo",attrs:{"src":__webpack_require__(20),"alt":"logo stilko"}}),_vm._v(" "),_c('div',[_c('span',{staticClass:"title"},[_vm._v("STILKO")]),_vm._v(" "),_c('p',{staticClass:"logo__description"},[_vm._v("I VŠE Z KOVU")])])])])],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"container-margin products\">","</section>",[_c('Subtitle',{attrs:{"id":"products"}},[_vm._v("Výrobky")]),_vm._ssrNode(" "),_c('b-row',_vm._l((_vm.items),function(item){return _c('b-col',{key:item.name,attrs:{"xs":"12","sm":"6","md":"3"}},[_c('Product',{attrs:{"name":item.name,"photo":item.photo,"description":item.description,"subproducts":item.subproducts,"special":item.special || false}})],1)}),1)],2),_vm._ssrNode(" "),_vm._ssrNode("<section id=\"contact\" class=\"contact\">","</section>",[_c('b-col',{staticClass:"contact",attrs:{"xs":"12","sm":"12","md":"6"}},[(_vm.formSentSuccesfully !== true)?_c('div',{staticClass:"contact-form--wrapper",attrs:{"id":"ct-form"}},[_c('h2',{staticClass:"contact--header"},[_vm._v("Zadejte svou objednávku/poptávku")]),_vm._v(" "),_c('p',{staticClass:"contact--description"},[_vm._v("Napište nám")]),_vm._v(" "),_c('form',{staticClass:"contact--form",on:{"submit":function($event){$event.preventDefault();return _vm.sendEmail.apply(null, arguments)}}},[_c('input',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.formName),expression:"formName",modifiers:{"trim":true}}],staticClass:"contact--input",attrs:{"type":"text","name":"name","placeholder":"Jméno a příjmení"},domProps:{"value":(_vm.formName)},on:{"input":function($event){if($event.target.composing){ return; }_vm.formName=$event.target.value.trim()},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('span',{staticClass:"contact-field__info"},[_vm._v("Minimálně 5 znaků")]),_vm._v(" "),_c('input',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.formEmail),expression:"formEmail",modifiers:{"trim":true}}],staticClass:"contact--input",attrs:{"name":"email","type":"email","placeholder":"E-mailová adresa"},domProps:{"value":(_vm.formEmail)},on:{"input":function($event){if($event.target.composing){ return; }_vm.formEmail=$event.target.value.trim()},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('span',{staticClass:"contact-field__info"},[_vm._v("Minimálně 7 znaků")]),_vm._v(" "),_c('textarea',{directives:[{name:"model",rawName:"v-model.trim",value:(_vm.formMessage),expression:"formMessage",modifiers:{"trim":true}}],staticClass:"contact--input",attrs:{"name":"message","rows":"5","placeholder":"Zpráva"},domProps:{"value":(_vm.formMessage)},on:{"input":function($event){if($event.target.composing){ return; }_vm.formMessage=$event.target.value.trim()},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('span',{staticClass:"contact-field__info last"},[_vm._v("Minimálně 10 znaků")]),_vm._v(" "),_c('button',{staticClass:"contact--submit",attrs:{"type":"submit","disabled":_vm.isSending}},[_vm._v("\n            Odeslat\n          ")])])]):_c('div',{staticClass:"contact-form--wrapper",attrs:{"id":"ct-form"}},[_c('h2',{staticClass:"contact--header"},[_vm._v("Děkujeme vám za zaslání e-mailu!")]),_vm._v(" "),_c('p',{staticClass:"contact--description"},[_vm._v("Budeme vás co nejdříve kontaktovat")])]),_vm._v(" "),_c('b-row',{staticClass:"tile--wrapper"},[_c('b-col',{staticClass:"tile",attrs:{"sm":"12","md":"4"}},[_c('a',{attrs:{"href":"tel: +48 602 590 435"}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":__webpack_require__(55),"alt":"Telefon"}})]),_vm._v(" "),_c('span',[_vm._v("+48 602 590 435")])])]),_vm._v(" "),_c('b-col',{staticClass:"tile",staticStyle:{"text-align":"center"},attrs:{"sm":"12","md":"4"}},[_c('a',{attrs:{"target":"_blank","href":""}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":__webpack_require__(56),"alt":"Lokalizacja"}})]),_vm._v(" "),_c('span',[_vm._v("ul. Gołębia 4"),_c('br'),_vm._v("26-601 Bielicha"),_c('br'),_vm._v("Polska")])])]),_vm._v(" "),_c('b-col',{staticClass:"tile",staticStyle:{"text-align":"center"},attrs:{"sm":"12","md":"4"}},[_c('a',{attrs:{"target":"_blank","href":"mailto:biuro.stilko@gmail.com"}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":__webpack_require__(57),"alt":"Email"}})]),_vm._v(" "),_c('span',[_vm._v("biuro.stilko@gmail.com")])])])],1)],1),_vm._ssrNode(" "),_c('b-col',{staticClass:"map",attrs:{"xs":"12","sm":"12","md":"6"}},[_c('div',[_c('Subtitle',{attrs:{"id":"about"}},[_vm._v("O nás")]),_vm._v(" "),_c('div',{domProps:{"innerHTML":_vm._s(_vm.aboutUs)}})],1),_vm._v(" "),_c('div',{staticClass:"map-wrapper"},[_c('a',{attrs:{"target":"_blank","href":"https://www.google.com/maps/place/STILKO+Monika+Fo%C5%82tyn/@51.4045971,21.114648,14.5z/data=!4m13!1m7!3m6!1s0x471859a88238ea31:0x302ad0e8848c83b9!2sBielicha+92A,+26-601+Bielicha!3b1!8m2!3d51.4174221!4d21.084609!3m4!1s0x47185924c62ce7c5:0xfc067ced0375085b!8m2!3d51.4173088!4d21.0845403"}},[_c('img',{attrs:{"width":"80%","src":'./map.jpeg',"alt":"Stilko Mapa"}})])])])],2)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=a3e8864c&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=535c3ed4&
 
 // EXTERNAL MODULE: ./components/Logo.vue + 2 modules
 var Logo = __webpack_require__(44);
@@ -398,12 +398,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   true,
   injectStyles,
   "3cbee7b6",
-  "40007f68"
+  "9e2fe2bc"
   
 )
 
 /* harmony default export */ var Subtitle = (component.exports);
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&
+//
+//
 //
 //
 //
@@ -544,7 +546,7 @@ var component = Object(componentNormalizer["a" /* default */])(
       formEmail: '',
       formMessage: '',
       formDataNameOrder: JSON.stringify('COSSS'),
-      formGoogleSheetName: "responses",
+      formGoogleSheetName: 'responses',
       formGoogleSendEmail: 'biuro.stilko@gmail.com' || false,
       formSentSuccesfully: null,
       items: [{
@@ -580,7 +582,7 @@ var component = Object(componentNormalizer["a" /* default */])(
       const url = 'https://script.google.com/macros/s/AKfycbycEP53yfqv-0hCS7a_33_KclBQ38cQ_vYPrHbfqIFBIlM6DVcf/exec';
       const xhr = new XMLHttpRequest();
       xhr.open('POST', url);
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -625,7 +627,7 @@ var pages_component = Object(componentNormalizer["a" /* default */])(
   false,
   pages_injectStyles,
   null,
-  "1f7491c4"
+  "14d83dc4"
   
 )
 

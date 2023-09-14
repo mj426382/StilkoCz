@@ -12,10 +12,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_swplugin_49b51234 from 'nuxt_plugin_swplugin_49b51234' // Source: ./sw.plugin.js (mode: 'client')
-import nuxt_plugin_bootstrapvue_41b3356c from 'nuxt_plugin_bootstrapvue_41b3356c' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_googleanalytics_daf691aa from 'nuxt_plugin_googleanalytics_daf691aa' // Source: ./google-analytics.js (mode: 'client')
-import nuxt_plugin_vuescrollto_53dc20e5 from 'nuxt_plugin_vuescrollto_53dc20e5' // Source: ../plugins/vue-scrollto (mode: 'client')
+import nuxt_plugin_swplugin_138d8593 from 'nuxt_plugin_swplugin_138d8593' // Source: .\\sw.plugin.js (mode: 'client')
+import nuxt_plugin_bootstrapvue_56c81129 from 'nuxt_plugin_bootstrapvue_56c81129' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_googleanalytics_39648aec from 'nuxt_plugin_googleanalytics_39648aec' // Source: .\\google-analytics.js (mode: 'client')
+import nuxt_plugin_vuescrollto_53dc20e5 from 'nuxt_plugin_vuescrollto_53dc20e5' // Source: ..\\plugins\\vue-scrollto (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -179,16 +179,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (process.client && typeof nuxt_plugin_swplugin_49b51234 === 'function') {
-    await nuxt_plugin_swplugin_49b51234(app.context, inject)
+  if (process.client && typeof nuxt_plugin_swplugin_138d8593 === 'function') {
+    await nuxt_plugin_swplugin_138d8593(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_41b3356c === 'function') {
-    await nuxt_plugin_bootstrapvue_41b3356c(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_56c81129 === 'function') {
+    await nuxt_plugin_bootstrapvue_56c81129(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_googleanalytics_daf691aa === 'function') {
-    await nuxt_plugin_googleanalytics_daf691aa(app.context, inject)
+  if (process.client && typeof nuxt_plugin_googleanalytics_39648aec === 'function') {
+    await nuxt_plugin_googleanalytics_39648aec(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuescrollto_53dc20e5 === 'function') {

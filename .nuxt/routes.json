@@ -2,15 +2,15 @@
   {
     "name": "sec",
     "path": "/sec",
-    "component": "/Users/mateusz/Desktop/Stilko/pages/sec.vue",
+    "component": "C:\\\\Users\\\\mateu\\\\Desktop\\\\StilkoCz\\\\pages\\\\sec.vue",
     "chunkName": "pages/sec",
-    "_name": "_32fe1762"
+    "_name": "_777acdaa"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/mateusz/Desktop/Stilko/pages/index.vue",
+    "component": "C:\\\\Users\\\\mateu\\\\Desktop\\\\StilkoCz\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_4a5dfdba"
+    "_name": "_2cfc34ac"
   }
 ]

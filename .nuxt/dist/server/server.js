@@ -628,7 +628,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   false,
   injectStyles,
   null,
-  "1ea35b7f"
+  "c0845382"
   
 )
 
@@ -644,7 +644,7 @@ module.exports = require("bootstrap-vue");
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/logo_small.1ab0bff.svg";
+module.exports = __webpack_require__.p + "img/logo_small.6adb172.svg";
 
 /***/ }),
 /* 21 */
@@ -1614,9 +1614,9 @@ function shouldScrollToTop(route) {
 
 
 
-const _32fe1762 = () => interopDefault(__webpack_require__.e(/* import() | pages/sec */ 2).then(__webpack_require__.bind(null, 62)));
+const _777acdaa = () => interopDefault(__webpack_require__.e(/* import() | pages/sec */ 2).then(__webpack_require__.bind(null, 62)));
 
-const _4a5dfdba = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 1).then(__webpack_require__.bind(null, 63)));
+const _2cfc34ac = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 1).then(__webpack_require__.bind(null, 63)));
 
 const emptyFn = () => {};
 
@@ -1629,11 +1629,11 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/sec",
-    component: _32fe1762,
+    component: _777acdaa,
     name: "sec"
   }, {
     path: "/",
-    component: _4a5dfdba,
+    component: _2cfc34ac,
     name: "index"
   }],
   fallback: false
@@ -1831,7 +1831,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "114cd150"
+  "6498a8bd"
   
 )
 
@@ -2135,7 +2135,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "67b4ba84"
+  "17686ab1"
   
 )
 
@@ -2256,7 +2256,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
   false,
   default_injectStyles,
   null,
-  "bc6660dc"
+  "46339a52"
   
 )
 
@@ -2539,13 +2539,13 @@ external_vue_default.a.use(external_bootstrap_vue_["BootstrapVue"], {});
 
 /* Plugins */
 
- // Source: ./sw.plugin.js (mode: 'client')
+ // Source: .\\sw.plugin.js (mode: 'client')
 
- // Source: ./bootstrap-vue.js (mode: 'all')
+ // Source: .\\bootstrap-vue.js (mode: 'all')
 
- // Source: ./google-analytics.js (mode: 'client')
+ // Source: .\\google-analytics.js (mode: 'client')
 
- // Source: ../plugins/vue-scrollto (mode: 'client')
+ // Source: ..\\plugins\\vue-scrollto (mode: 'client')
 // Component: <ClientOnly>
 
 external_vue_default.a.component(external_vue_client_only_default.a.name, external_vue_client_only_default.a); // TODO: Remove in Nuxt 3: <NoSsr>
