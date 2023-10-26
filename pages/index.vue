@@ -31,48 +31,6 @@
 
     <section class="contact" id="contact">
       <b-col class="contact" xs="12" sm="12" md="6">
-        <div
-          class="contact-form--wrapper"
-          id="ct-form"
-          v-if="formSentSuccesfully !== true"
-        >
-          <h2 class="contact--header">Zadejte svou objednávku/poptávku</h2>
-          <p class="contact--description">Napište nám</p>
-          <form class="contact--form" @submit.prevent="sendEmail">
-            <input
-              v-model.trim="formName"
-              type="text"
-              name="name"
-              class="contact--input"
-              placeholder="Jméno a příjmení"
-            />
-            <span class="contact-field__info">Minimálně 5 znaků</span>
-            <input
-              v-model.trim="formEmail"
-              name="email"
-              type="email"
-              class="contact--input"
-              placeholder="E-mailová adresa"
-            />
-            <span class="contact-field__info">Minimálně 7 znaků</span>
-            <textarea
-              v-model.trim="formMessage"
-              name="message"
-              class="contact--input"
-              rows="5"
-              placeholder="Zpráva"
-            />
-            <span class="contact-field__info last">Minimálně 10 znaků</span>
-            <button class="contact--submit" type="submit" :disabled="isSending">
-              Odeslat
-            </button>
-          </form>
-        </div>
-        <div class="contact-form--wrapper" id="ct-form" v-else>
-          <h2 class="contact--header">Děkujeme vám za zaslání e-mailu!</h2>
-          <p class="contact--description">Budeme vás co nejdříve kontaktovat</p>
-        </div>
-
         <b-row class="tile--wrapper">
           <b-col class="tile" sm="12" md="4">
             <a href="tel: +48 602 590 435">

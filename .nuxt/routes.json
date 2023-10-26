@@ -1,0 +1,16 @@
+[
+  {
+    "name": "sec",
+    "path": "/sec",
+    "component": "C:\\\\Users\\\\mateu\\\\Desktop\\\\StilkoCz\\\\pages\\\\sec.vue",
+    "chunkName": "pages/sec",
+    "_name": "_777acdaa"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\mateu\\\\Desktop\\\\StilkoCz\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2cfc34ac"
+  }
+]
